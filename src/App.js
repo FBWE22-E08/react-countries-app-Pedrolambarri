@@ -5,6 +5,7 @@ import ByName from "./components/views/ByName";
 import Header from "./components/Header";
 import NotFound from "./components/NotFound";
 import { Route, Routes } from "react-router-dom";
+import OneCountry from "./components/views/OneCountry";
 
 function App() {
 
@@ -18,6 +19,8 @@ function App() {
       <Route path ="/" element ={<AllCountries/>}/>
       <Route path ="/by-region" element ={<ByRegion/>}/>
       <Route path ="/by-name" element ={<ByName/>}/>
+      <Route path ="/One-country/:code" element ={<OneCountry/>}/>
+      
       <Route path ="*" element ={<NotFound/>}/>
 
     </Routes> 
